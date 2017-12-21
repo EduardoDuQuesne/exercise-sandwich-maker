@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sandwich Maker</title>
+</head>
+<body>
+    <h1>Customize your sandwich!</h1>
+   
+    <section id="bread-items">
+        <h3>Select type of bread:</h3>
+        <input type="radio" name="bread" value="baguette"> Baguette
+        <input type="radio" name="bread" value="focaccia"> Focaccia 
+        <input type="radio" name="bread" value="sourdough"> Sourdough 
+        <input type="radio" name="bread" value="bagel"> Bagel
+    </section>
+    
+    <section id="meat-items">
+        <h3>Select your meats:</h3>
+        <input type="checkbox" name="meat" value="ham"> Ham
+        <input type="checkbox" name="meat" value="turkey"> Turkey
+        <input type="checkbox" name="meat" value="pastrami"> Pastrami
+        <input type="checkbox" name="meat" value="roast-beef"> Roast Beef 
+        <input type="checkbox" name="meat" value="bacon"> Bacon 
+    </section>
+    
+    <section id="cheese-items">
+            <h3>Select your cheese:</h3>
+            <input type="checkbox" name="cheese" value="swiss"> Swiss 
+            <input type="checkbox" name="cheese" value="american"> American  
+            <input type="checkbox" name="cheese" value="muenster"> Muenster  
+            <input type="checkbox" name="cheese" value="gouda"> Gouda  
+            <input type="checkbox" name="cheese" value="havarti"> Havarti  
+    </section>
+        
+     <section id="condiment-items">
+         <h3>Select your condiments:</h3>
+         <input type="checkbox" name="condiments" value="mayo"> Mayo
+         <input type="checkbox" name="condiments" value="ketchup"> Ketchup  
+         <input type="checkbox" name="condiments" value="mustard"> Mustard  
+         <input type="checkbox" name="condiments" value="sriracha"> Sriracha  
+        </section>
+        
+        <section id="veggie-items">
+            <h3>Select your veggies:</h3>
+           <input type="checkbox" name="veggies" value="lettuce"> Lettuce  
+           <input type="checkbox" name="veggies" value="tomatoes"> Tomatoes 
+           <input type="checkbox" name="veggies" value="onions"> Onions  
+           <input type="checkbox" name="veggies" value="pickles"> Pickles  
+           <input type="checkbox" name="veggies" value="peppers"> Peppers  
+    </section>
+    <button id="submit-order">Submit Order</button>
+
+    <section id="your-order">
+
+    </section>
+            
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
