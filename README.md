@@ -1,4 +1,4 @@
-# spa-sandwich-maker
+# Sandwich-Maker
 
 ## Your project should have one HTML file that has:
 
