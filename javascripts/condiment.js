@@ -8,7 +8,6 @@ let condimentPrices = {
 }; 
 
 const addCondiment = function(condimentSelection) {
-    console.log("CONDOS");
     return condimentPrices[condimentSelection]; 
 };
 
