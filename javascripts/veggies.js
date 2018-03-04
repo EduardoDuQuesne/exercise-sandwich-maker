@@ -9,7 +9,6 @@ let veggiePrices = {
 }; 
 
 const addVeggies = function(veggieSelection) {
-    console.log("CONDOS");
     return veggiePrices[veggieSelection]; 
 };
 
