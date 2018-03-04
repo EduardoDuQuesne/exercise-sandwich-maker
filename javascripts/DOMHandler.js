@@ -19,13 +19,9 @@ var meatChooser = document.getElementById("meat-items");
 meatChooser.addEventListener("change", function(event) {
     selectedTopping = event.target.value;
     if (event.target.checked) {
-        console.log("selected", selectedTopping);
         sandwichPrice += meat.addMeat(selectedTopping);
-        console.log("Price Add: ", sandwichPrice);
     } else {
         sandwichPrice = sandwichPrice - meat.addMeat(selectedTopping);
-        console.log("Price Removed: ", sandwichPrice);
-
     }
 });
 
@@ -35,13 +31,9 @@ var cheeseChooser = document.getElementById("cheese-items");
 cheeseChooser.addEventListener("change", function(event) {
     selectedTopping = event.target.value;
     if (event.target.checked) {
-        console.log("selected", selectedTopping);
         sandwichPrice += cheese.addCheese(selectedTopping);
-        console.log("Price Add: ", sandwichPrice);
     } else {
         sandwichPrice = sandwichPrice - cheese.addCheese(selectedTopping);
-        console.log("Price Removed: ", sandwichPrice);
-
     }
 });
 
@@ -50,13 +42,9 @@ var condimentChooser = document.getElementById("condiment-items");
 condimentChooser.addEventListener("change", function(event) {
     selectedTopping = event.target.value;
     if (event.target.checked) {
-        console.log("selected", selectedTopping);
         sandwichPrice += condiment.addCondiment(selectedTopping);
-        console.log("Price Add: ", sandwichPrice);
     } else {
         sandwichPrice = sandwichPrice - condiment.addCondiment(selectedTopping);
-        console.log("Price Removed: ", sandwichPrice);
-
     }
 });
 
@@ -65,12 +53,9 @@ var veggieChooser = document.getElementById("veggie-items");
 veggieChooser.addEventListener("change", function(event) {
     selectedTopping = event.target.value;
     if (event.target.checked) {
-        console.log("selected", selectedTopping);
         sandwichPrice += veggies.addVeggies(selectedTopping);
-        console.log("Price Add: ", sandwichPrice);
     } else {
         sandwichPrice = sandwichPrice - veggies.addVeggies(selectedTopping);
-        console.log("Price Removed: ", sandwichPrice);
 
     }
 });
@@ -82,7 +67,6 @@ var breadChooser = document.getElementById("bread-items");
 breadChooser.addEventListener("change", function(event) {
     selectedTopping = event.target.value;
     breadPrice = bread.addBread(selectedTopping);
-    console.log(breadPrice);
 });
 
 let submitBtn = document.getElementById("submit-order");
